@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Elements ka size sahi rakhne ke liye */
+}
+
+body {
+    background-color: #3A2522;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 2rem;
+}
+
+h1 {
+    color: #fff;
+    font-size: 8vmin;
+    margin-bottom: 2rem;
+}
+
+/* Winner Message Box ko thoda behtar style kiya */
+.msg-container {
+    height: 15vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+#msg {
+    color: #ffffc7;
+    font-size: 6vmin;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.container {
+    height: 65vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+/* Tic-Tac-Toe Boxes */
+.box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow thodi wazeh ki */
+    font-size: 8vmin; /* Text thoda bada kiya taake X aur O saaf dikhein */
+    font-weight: bold;
+    color: #138ca1;
+    background-color: beige;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.1s;
+}
+
+/* Box par mouse le jane ya click karne ka effect */
+.box:hover {
+    background-color: #f5f5dc;
+}
+
+.box:active {
+    transform: scale(0.95);
+}
+
+/* Dono buttons (Reset aur New Game) ko aik jaisa premium look diya */
+#reset-btn, #new-btn {
+    padding: 0.8rem 1.8rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    background-color: #745f1d;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+    transition: background-color 0.2s, transform 0.1s;
+    margin: 0.5rem;
+}
+
+#reset-btn:hover, #new-btn:hover {
+    background-color: #8b7224;
+}
+
+#reset-btn:active, #new-btn:active {
+    transform: scale(0.95);
+}
+
+/* Hidden elements ke liye class */
+.hide {
+    display: none !important;
+}
+/* O ka rang (Cyan/Blue) */
+.color-o {
+    color: #138ca1 !important;
+}
+
+/* X ka rang (Red/Orange ya jo aap ko pasand ho) */
+.color-x {
+    color: #b83214 !important; 
+}
