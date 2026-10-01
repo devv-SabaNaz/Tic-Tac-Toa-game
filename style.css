@@ -109,5 +109,76 @@ h1 {
 
 /* X ka rang (Red/Orange ya jo aap ko pasand ho) */
 .color-x {
+
+    /* responsiveness add  */
+    @media (max-width: 600px) {
+
+    body {
+        padding-top: 1rem;
+    }
+
+    h1 {
+        font-size: 10vmin;
+        margin-bottom: 1rem;
+    }
+
+    .msg-container {
+        height: auto;
+        min-height: 15vmin;
+        margin-bottom: 1rem;
+    }
+
+    #msg {
+        font-size: 6vmin;
+    }
+
+    .container {
+        height: auto;
+        min-height: 65vh;
+    }
+
+    .game {
+        width: 85vmin;
+        height: 85vmin;
+        gap: 1.5vmin;
+    }
+
+    .box {
+        width: 27vmin;
+        height: 27vmin;
+        font-size: 10vmin;
+        border-radius: 0.7rem;
+    }
+
+    #reset-btn,
+    #new-btn {
+        font-size: 1rem;
+        padding: 0.7rem 1.4rem;
+    }
+}
+
+
+/* Extra small mobile screens */
+
+@media (max-width: 400px) {
+
+    .game {
+        width: 90vmin;
+        height: 90vmin;
+        gap: 1.2vmin;
+    }
+
+    .box {
+        width: 28.5vmin;
+        height: 28.5vmin;
+        font-size: 10vmin;
+    }
+
+    #reset-btn,
+    #new-btn {
+        font-size: 0.9rem;
+        padding: 0.6rem 1.2rem;
+    }
+}
     color: #b83214 !important; 
 }
